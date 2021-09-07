@@ -1,0 +1,16 @@
+
+<h1>Listado Super Heroes</h1>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row wrap" 
+    fxLayout.xs="column"
+    fxLayoutAlign="center" 
+    fxLayoutGap="20px" >
+    
+    <div  fxFlex.sm="30"
+          fxFlex="20"
+          fxFlex.lg="15"
+           *ngFor="let heroe of heroes">
+        <app-heroe-card [heroe]="heroe" ></app-heroe-card>
+    </div>
+</div>
